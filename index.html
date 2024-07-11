@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <caption>HEALTH-AI</caption>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Diseases</a>
+                    </li>
+                    <!-- Search bar -->
+                    <li class="nav-item">
+                        <form class="d-flex" role="search" id="diseaseSearchForm">
+                            <input class="form-control me-2" type="search" placeholder="Search Diseases" aria-label="Search" list="diseasesList" id="diseaseSearchInput">
+                            <datalist id="diseasesList">
+                                <option value="Diabetes">
+                                <option value="Pneumonia">
+                                <option value="Brain tumor">
+                                <option value="Heart Disease">
+                                <option value="Medicine Recommend">
+                            </datalist>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <div class="main-container">
+        <div>
+            <h1 class="display-4" style="font-weight: 400;">WELCOME TO HEALTH-AI</h1>
+            <p class="lead" style="font-size: 36px;">An Artificial Intelligence powered healthcare initiative.</p>
+            <p  class="lead" style="font-size: 32px;">Our AI techniques cover </p>
+        </div>
+    </div>
+    
+    <!-- Section  -->
+    <section class="my-5" id="p">
+        <div class="py-5">
+            <h2 class="text-center">Machine Learning Disease Prediction and Recommendation</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="/image/diabetes.JPG" alt="Diabetes Predictor">
+                        <div class="card-body">
+                            <h4 class="card-title">Diabetes Predictor</h4>
+                            <p class="card-text">Predict diabetes risk using our advanced AI model based on user input.</p>
+                            <a href="https://diabetesprediction-rk.streamlit.app/" class="btn btn-dark" target="_blank">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="/image/medicine.JPG" alt="Medicine Recommender">
+                        <div class="card-body">
+                            <h4 class="card-title">Medicine Recommender</h4>
+                            <p class="card-text">Discover effective alternatives for prescribed medicines.</p>
+                            <a href="https://medreco-rk.streamlit.app/" class="btn btn-dark" target="_blank">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" height="236px" src="/image/Heart.JPG" alt="Heart Disease Predictor">
+                        <div class="card-body">
+                            <h4 class="card-title">Heart Disease Prediction</h4>
+                            <p class="card-text">Predict your risk of developing heart disease using advanced ML algorithms.</p>
+                            <a href="https://heartdisease-rk.streamlit.app/" class="btn btn-dark" target="_blank">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="my-5">
+        <div class="py-5 text-center">
+            <h2>Computer Vision based Disease Detection</h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" height="270px" src="/image/braintumor.JPG" alt="Brain Tumor Classification">
+                        <div class="card-body">
+                            <h4 class="card-title">Brain Tumor Classification</h4>
+                            <p class="card-text">Classify types of brain tumors using transfer learning techniques.</p>
+                            <a href="https://diabetesprediction-rk.streamlit.app/" class="btn btn-dark" target="_blank">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" height="270px" src="/image/pneumonia.JPG" alt="Pneumonia Detection">
+                        <div class="card-body">
+                            <h4 class="card-title">Pneumonia Detection</h4>
+                            <p class="card-text">Detect pneumonia from X-ray images using advanced image processing techniques.</p>
+                            <a href="https://medreco-rk.streamlit.app/" class="btn btn-dark" target="_blank">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+          <p>Copyright © 2024 Health.ai. All rights reserved.</p>
+          <p>
+            <a href="terms-of-use.html">Terms of Use</a> |
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-q94+BZtLrkL1/ohfjR8c6L/A6qzNH9R" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
